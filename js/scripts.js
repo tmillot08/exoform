@@ -44,6 +44,7 @@ $('#country').on('input', function() {
        }
 });
 $('#d1, #d2').onclick('input', function() {
+       var input=$(this);
   	   if($('#d1').is(':checked') || $('#d2').is(':checked') ){
           input.removeClass("valid").addClass("error");
        }else{
